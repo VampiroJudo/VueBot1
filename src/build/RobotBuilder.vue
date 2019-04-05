@@ -2,9 +2,9 @@
   <div>
     <div class="top-row">
       <div class="top part">
-        <img v-bind:src="availableParts.heads[0].src" title="head"/>
+        <img v-bind:src="availableParts.heads[selectHeadIndex].src" title="head"/>
         <button class="prev-selector">&#9668;</button>
-        <button class="next-selector">&#9658;</button>
+        <button v-on:click="selectNextHead()" class="next-selector">&#9658;</button>
       </div>
     </div>
     <div class="middle-row">
@@ -42,7 +42,13 @@
     data() {
       return {
         availableParts,
+        selectHeadIndex: 0,
       };
+    },
+    methods: {
+      selectNextHead() { 
+        this.selectHeadIndex += 1;
+      },
     },
   };
 </script>
