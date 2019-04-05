@@ -1,8 +1,18 @@
 <template>
   <div id="app">
-    <main>
-      <RobotBuilder />
-    </main>
+    <header>
+      <nav>
+        <ul>
+          <li class="nav-item">
+            <!-- <img class="logo" src="./assets/build-a-bot-logo.png"/> -->
+            Build-a-Bot
+          </li>
+        </ul>
+      </nav>
+    </header>
+      <main>
+        <RobotBuilder />
+      </main>
   </div>
 </template>
 
@@ -15,8 +25,8 @@ export default {
   components: {
     // HomePage,
     RobotBuilder,
-  }
-}
+  },
+};
 </script>
 
 <style>
@@ -29,7 +39,7 @@ body {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
 }
 
-main {
+li {
   margin: 0 auto;
   padding: 30px;
   background-color: white;
