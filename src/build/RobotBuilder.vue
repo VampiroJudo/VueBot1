@@ -15,19 +15,19 @@
       </div>
       <div class="center part">
         <img v-bind:src="availableParts.torsos[selectedTorsoIndex].src" title="left arm"/>
-        <button  v-on:click="selectPreviousTorso()"class="prev-selector">&#9668;</button>
+        <button  v-on:click="selectPreviousTorso()" class="prev-selector">&#9668;</button>
         <button  v-on:click="selectNextTorso()" class="next-selector">&#9658;</button>
       </div>
       <div class="right part">
         <img v-bind:src="availableParts.arms[selectedRightArmIndex].src" title="left arm"/>
-        <button  v-on:click="selectPreviousRightArm()"class="prev-selector">&#9668;</button>
+        <button  v-on:click="selectPreviousRightArm()" class="prev-selector">&#9668;</button>
         <button  v-on:click="selectNextRightArm()" class="next-selector">&#9658;</button>
       </div>
     </div>
     <div class="bottom-row">
       <div class="bottom part">
         <img v-bind:src="availableParts.bases[selectedBaseIndex].src" title="left arm"/>
-        <button  v-on:click="selectPreviousBase()"class="prev-selector">&#9668;</button>
+        <button  v-on:click="selectPreviousBase()" class="prev-selector">&#9668;</button>
         <button  v-on:click="selectNextBase()" class="next-selector">&#9658;</button>
       </div>
     </div>
